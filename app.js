@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express();
 
-const port = 8080;
-const host = '0.0.0.0';
+const port = 8092;
+
 
 app.get('/', (req, res) => {
-  res.send('Hello World from IBM Cloud Essentials!');
+  res.send('Hello World!');
 })
 
 app.listen(port, host);
-console.log(`Running on http://${host}:${port}`);
+console.log(`Running on ${port}`);
